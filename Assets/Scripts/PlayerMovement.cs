@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Variable para acceder al componente Rigidbody2D
     private Rigidbody2D rb;
+    private SpriteRenderer sr; // Variable para acceder al componente SpriteRenderer
 
     private bool enPiso = false; // Variable para saber si el personaje está en el piso o no
     private bool saltando = false; // Nueva variable para controlar el estado de salto
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Inicializar rb
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>(); // Inicializar sr
     }
 
     // Update is called once per frame (60FPS)
@@ -44,6 +46,8 @@ public class PlayerMovement : MonoBehaviour
         {
             saltando = false; // Resetear el estado de salto cuando se suelta la tecla de salto
         }
+
+        Flip(); // Llamar a la función Flip para girar el sprite del personaje
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -54,5 +58,18 @@ public class PlayerMovement : MonoBehaviour
     void OnTriggerExit2D(Collider2D collision)
     {
         enPiso = false;
+    }
+
+    // Función para girar el sprite del personaje
+    void Flip()
+    {
+        if (rb.linearVelocity.x > 0)
+        {
+            sr.flipX = false;
+        }
+        else if (rb.linearVelocity.x < 0)
+        {
+            sr.flipX = true;
+        }
     }
 }
