@@ -1,0 +1,16 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/button.uss?fileID=7433441132597879392&amp;guid=a4d4a428952cbed41be59e098c524280&amp;type=3#button" />
+    <engine:VisualElement name="Pantalla" style="flex-grow: 1;">
+        <engine:VisualElement name="ContainerTitle" class="titlecont" style="flex-grow: 1; height: 0; margin-left: 0; margin-right: 0;">
+            <engine:Label text="TAREA UNITY" class="title" style="background-color: rgba(72, 72, 72, 0); margin-top: 2px;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="Buttons" class="buttons" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.76); left: 0; right: 0; top: 0; bottom: 0; justify-content: center; align-self: auto; align-content: auto; margin-left: 200px; margin-right: 200px; align-items: center;">
+            <engine:Label text="What is Lorem Ipsum?" class="text" />
+            <engine:Label text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. &#10;Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, &#10;when an unknown printer took a galley of type and scrambled it to make a type specimen book. &#10;It has survived not only five centuries, but also the leap into electronic typesetting, remaining &#10;essentially unchanged. It was popularised in the 1960s with the release of Letraset &#10;sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like&#10; Aldus PageMaker including versions of Lorem Ipsum" class="text" />
+        </engine:VisualElement>
+        <engine:VisualElement name="Nem" class="nem" style="flex-grow: 1; padding-top: 0; margin-top: -165px; align-items: center; justify-content: center; align-self: stretch; align-content: center;">
+            <engine:Label text="Diego Carreón Aguirre A01747352" parse-escape-sequences="false" emoji-fallback-support="false" enable-rich-text="true" class="name" />
+            <engine:Button text="X" name="Exit" class="exit" style="background-image: url(&quot;project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/gold/CLOSE-1.png?fileID=21300000&amp;guid=c0b6c38e965c69c4baaec76c33e68cf3&amp;type=3#CLOSE-1&quot;);" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

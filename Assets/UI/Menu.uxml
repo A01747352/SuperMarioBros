@@ -1,9 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
->
-    
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/button.uss?fileID=7433441132597879392&amp;guid=a4d4a428952cbed41be59e098c524280&amp;type=3#button" />
+    <engine:VisualElement name="Pantalla" style="flex-grow: 1;">
+        <engine:VisualElement name="ContainerTitle" class="titlecont" style="flex-grow: 1; height: 0; margin-left: 0; margin-right: 0;">
+            <engine:Label text="TAREA UNITY" class="title" style="background-color: rgba(72, 72, 72, 0); margin-top: 2px;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="Buttons" class="buttons" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.29); left: 0; right: 0; top: 0; bottom: 0; justify-content: center; align-self: auto; align-content: auto; margin-left: 200px; margin-right: 200px; align-items: center;">
+            <engine:Button text="Jugar" name="Play" class="button" />
+            <engine:Button text="Ayuda" name="Ayuda" class="button" />
+            <engine:Button text="Créditos" name="Credits" class="button" />
+        </engine:VisualElement>
+        <engine:VisualElement name="Nem" class="nem" style="flex-grow: 1; padding-top: 0; margin-top: -165px; align-items: center; justify-content: center; align-self: stretch; align-content: center;">
+            <engine:Label text="Diego Carreón Aguirre A01747352" parse-escape-sequences="false" emoji-fallback-support="false" enable-rich-text="true" class="name" />
+            <engine:Button text="X" name="Exit" class="exit" />
+        </engine:VisualElement>
+    </engine:VisualElement>
 </engine:UXML>
